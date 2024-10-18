@@ -20,6 +20,12 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.2
         version: 5.1.2(astro@4.16.6(rollup@4.24.0)(typescript@5.6.3))(tailwindcss@3.4.14)
+      '@fontsource-variable/mohave':
+        specifier: ^5.1.0
+        version: 5.1.0
+      '@fontsource-variable/quicksand':
+        specifier: ^5.1.0
+        version: 5.1.0
       '@types/react':
         specifier: ^18.3.11
         version: 18.3.11
@@ -390,6 +396,12 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/mohave@5.1.0':
+    resolution: {integrity: sha512-e3T84okJ9rk1SX2gtna9+qY9ajUdphZFjzaApD/Myfy6i7AySSUp2ZARsR5panILppij6x/ygZYXs0r1+7eg6Q==}
+
+  '@fontsource-variable/quicksand@5.1.0':
+    resolution: {integrity: sha512-0pJgaaRitvWvADcEpDjXTvPO/oO1OUJiZdggUPtOang8ytK+tf4rJAM/L/YsTiSgRZW1565GWIqkmGdJQ/V88A==}
 
   '@iconify/tools@4.0.7':
     resolution: {integrity: sha512-zOJxKIfZn96ZRGGvIWzDRLD9vb2CsxjcLuM+QIdvwWbv6SWhm49gECzUnd4d2P0sq9sfodT7yCNobWK8nvavxQ==}
@@ -2855,6 +2867,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@fontsource-variable/mohave@5.1.0': {}
+
+  '@fontsource-variable/quicksand@5.1.0': {}
 
   '@iconify/tools@4.0.7':
     dependencies:
