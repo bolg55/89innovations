@@ -1,0 +1,58 @@
+---
+import {
+  FacebookIcon,
+  InstagramIcon,
+  XIcon,
+  GithubIcon,
+  YoutubeIcon,
+  LinkedinIcon,
+} from '@/components/icons';
+
+const socials = [
+  {
+    icon: FacebookIcon,
+    link: 'https://www.facebook.com/',
+    name: 'Facebook',
+  },
+  {
+    icon: InstagramIcon,
+    link: 'https://www.instagram.com/',
+    name: 'Instagram',
+  },
+  {
+    icon: XIcon,
+    link: 'https://twitter.com/',
+    name: 'Twitter',
+  },
+
+  {
+    icon: LinkedinIcon,
+    link: 'https://www.linkedin.com/company/',
+    name: 'LinkedIn',
+  },
+  {
+    icon: GithubIcon,
+    link: 'https://gitub.com/bolg55',
+    name: 'Github',
+  },
+  {
+    icon: YoutubeIcon,
+    link: 'https://www.youtube.com/',
+    name: 'Youtube',
+  },
+];
+---
+
+{
+  socials.map(({ icon: Icon, link, name }) => (
+    <a
+      href={link}
+      target='_blank'
+      rel='noopener noreferrer'
+      class='text-footer-text hover:text-accent transition-all hover:scale-110'
+    >
+      <Icon class='w-6 h-6' />
+      <span class='sr-only'>{name}</span>
+    </a>
+  ))
+}
