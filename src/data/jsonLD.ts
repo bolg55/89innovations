@@ -51,13 +51,13 @@ const jsonLDGenerator = ({
               "logo": "/images/logo.png",
               "contactPoint": {
                   "@type": "ContactPoint",
-                  "telephone": "+1-519-498-8096",
+                  "telephone": "${import.meta.env.PUBLIC_PHONE_NUMBER}",
                   "contactType": "Customer service"
               },
               "sameAs": [
-                  "https://www.facebook.com/89innovations",
-                  "https://www.twitter.com/89innovations",
-                  "https://www.instagram.com/89innovations"
+                  "${import.meta.env.PUBLIC_FACEBOOK_URL}",
+                  "${import.meta.env.PUBLIC_TWITTER_URL}",
+                  "${import.meta.env.PUBLIC_INSTAGRAM_URL}",
                 ],
                 "description": "We provide expert SEO, copywriting, web development, and CRO services to help businesses succeed online.",
     "member": [
