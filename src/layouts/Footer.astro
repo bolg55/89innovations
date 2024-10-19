@@ -41,16 +41,14 @@ import FooterIcons from '@/components/ui/footer-icons.astro';
       </div>
     </div>
   </Container>
-  <div class='border-t border-accent/40 py-8'>
-    <Container class='md:flex md:items-center md:justify-between'>
-      <div class='flex space-x-6 md:order-3'>
-        <FooterIcons />
-      </div>
+  <Container class='md:flex md:items-center md:justify-between'>
+    <div class='flex space-x-6 md:order-3'>
+      <FooterIcons />
+    </div>
 
-      <p class='mt-4 text-sm text-footer-text md:order-1 md:mt-0'>
-        &copy; {new Date().getFullYear()}
-        {COMPANY}. All rights reserved.
-      </p>
-    </Container>
-  </div>
+    <p class='mt-4 text-sm text-footer-text md:order-1 md:mt-0'>
+      &copy; {new Date().getFullYear()}
+      {COMPANY}. All rights reserved.
+    </p>
+  </Container>
 </footer>
