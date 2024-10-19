@@ -1,14 +1,19 @@
 ---
 import '@fontsource-variable/mohave';
 import '@fontsource-variable/quicksand';
+
 import Head from './Head.astro';
+import Navbar from './navbar/navbar.astro';
+import Footer from './Footer.astro';
 const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang='en'>
   <Head {title} {description} />
-  <body class='bg-[#F6F6F6]'>
+  <body class='bg-background'>
+    <Navbar />
     <slot />
+    <Footer />
   </body>
 </html>
