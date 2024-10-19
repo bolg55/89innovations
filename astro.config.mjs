@@ -10,6 +10,6 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://bluelinedigital.io',
+  site: 'https://eightynineinnovations.com',
   integrations: [react(), tailwind(), sitemap(), robotsTxt(), icon()],
 });

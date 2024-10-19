@@ -38,6 +38,9 @@ importers:
       astro-icon:
         specifier: ^1.1.1
         version: 1.1.1
+      astro-navbar:
+        specifier: ^2.3.3
+        version: 2.3.3
       astro-robots-txt:
         specifier: ^1.0.0
         version: 1.0.0
@@ -814,6 +817,9 @@ packages:
 
   astro-icon@1.1.1:
     resolution: {integrity: sha512-HKBesWk2Faw/0+klLX+epQVqdTfSzZz/9+5vxXUjTJaN/HnpDf608gRPgHh7ZtwBPNJMEFoU5GLegxoDcT56OQ==}
+
+  astro-navbar@2.3.3:
+    resolution: {integrity: sha512-WAiQUVh3fS+bUw1oDcWpddFj30z3VgmMDmSjpU78idCXiV5t4KtlBvKV0mE/+hpcGLK0ji1evvCbk2wQ7wphyQ==}
 
   astro-robots-txt@1.0.0:
     resolution: {integrity: sha512-6JQSLid4gMhoWjOm85UHLkgrw0+hHIjnJVIUqxjU2D6feKlVyYukMNYjH44ZDZBK1P8hNxd33PgWlHzCASvedA==}
@@ -3295,6 +3301,8 @@ snapshots:
     transitivePeerDependencies:
       - debug
       - supports-color
+
+  astro-navbar@2.3.3: {}
 
   astro-robots-txt@1.0.0:
     dependencies:
