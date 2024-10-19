@@ -1,47 +1,39 @@
-# Astro Starter Kit: Minimal
+# Instructions to get started with the project
 
-```sh
-npm create astro@latest -- --template minimal
-```
+This starter project is meant to be cloned and re-used when starting new web development projects. It includes a basic setup for a web project with the following features:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+> [!IMPORTANT]
+> Remember to update the `site` property in the `astro.config.mjs` file with your site's url. This is important for SEO purposes.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Components
 
-## 🚀 Project Structure
+- Navbar component with mobile responsiveness
+- Footer component
+- Link/Button component
+- Social media icons
+- SEO component
+- Logo component
 
-Inside of your Astro project, you'll see the following folders and files:
+## Data
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- Populate the footer with data inside the `data/footerData.ts` file
+- Populate the navbar with data inside the `data/menuItems.ts` file
+- Populate general SEO data inside the `data/siteData.json` file. This data will be used to populate the SEO component, and the jsonLD generator.
+- Make a `.env` file based on the example; fill out your social media and site info. This data will be used to generate the jsonLD for the website, as well as SEO, and for the footer icons in `components/ui/footer-icons.astro`.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+> [!WARNING]
+> The jsonLD file does not have linting enabled, so make sure to follow the correct format when adding data.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+The current template should work, but you can add more data if needed. Use the [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool) to validate the jsonLD.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Styles
 
-## 🧞 Commands
+- The project uses Tailwind for styling. Add your brand colors and fonts to the `tailwind.config.mjs` file. Example colors and fonts are already included.
+- The project uses fontsource for fonts, as recommended by Astro in their documentation.
 
-All commands are run from the root of the project, from a terminal:
+## Pages
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Index page just to show the navbar and footer
+- (Coming soon) Contact page with submission form
+- (Coming soon) Blog page with markdown support and pagination
+- (Coming soon) Sample blog posts
