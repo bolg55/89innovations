@@ -1,18 +1,23 @@
 # Instructions to get started with the project
 
+Install dependencies with `pnpm i` or `npm i` or `yarn`.
+
 This starter project is meant to be cloned and re-used when starting new web development projects. It includes a basic setup for a web project with the following features:
 
 > [!IMPORTANT]
 > Remember to update the `site` property in the `astro.config.mjs` file with your site's url. This is important for SEO purposes.
 
-## Components
+## Features
 
-- Navbar component with mobile responsiveness
-- Footer component
-- Link/Button component
-- Social media icons
-- SEO component
+- Working contact form with web3forms
+- SEO component with jsonLD generator
 - Logo component
+- Social media icons
+- Navbar with mobile responsiveness
+- Footer with social media icons
+
+> [!NOTE]
+> Get a free API key from [Web3Forms](https://web3forms.com/) and add it to the `.env` file. This will allow you to receive form submissions.
 
 ## Data
 
@@ -33,7 +38,26 @@ The current template should work, but you can add more data if needed. Use the [
 
 ## Pages
 
-- Index page just to show the navbar and footer
-- (Coming soon) Contact page with submission form
-- (Coming soon) Blog page with markdown support and pagination
-- (Coming soon) Sample blog posts
+- [x] Index page just to show the navbar and footer
+- [x] Contact page with submission form
+- [] (Coming soon) Blog page with markdown support and pagination
+- [] (Coming soon) Sample blog posts
+
+## Suggested Environment Variables
+
+```env
+PUBLIC_SITE_NAME="My Site"
+
+PUBLIC_FACEBOOK_URL=https://www.facebook.com/_username_
+PUBLIC_TWITTER_URL=https://twitter.com/_username_
+PUBLIC_INSTAGRAM_URL=https://www.instagram.com/_username_
+PUBLIC_LINKEDIN_URL=https://www.linkedin.com/in/_username_
+PUBLIC_GITHUB_URL=https://www.github.com/_username_
+PUBLIC_YOUTUBE_URL=https://www.youtube.com/channel/_username_
+
+
+PUBLIC_TWITTER_HANDLE=@_username_
+PUBLIC_PHONE_NUMBER=+1234567890
+
+WEB3_KEY=your_web3_key
+```
