@@ -101,7 +101,7 @@ import Layout from '@/layouts/Layout.astro';
     result.innerHTML = 'Sending...';
 
     // Disable the submit button
-    submitButton.setAttribute('disabled', 'disabled');
+    submitButton.disabled = true;
     submitButton.innerHTML = 'Sending...';
 
     const formData = new FormData(form);
@@ -123,7 +123,7 @@ import Layout from '@/layouts/Layout.astro';
       result.innerHTML = 'An error occurred. Please try again later.';
     } finally {
       // Re-enable the submit button
-      submitButton.removeAttribute('disabled');
+      submitButton.disabled = false;
       submitButton.innerHTML = 'Send Message';
     }
     setTimeout(() => {
