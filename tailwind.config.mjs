@@ -15,7 +15,7 @@ export default {
       colors: {
         // body: ,
         primary: '#1E1D20',
-        // secondary: ,
+        // secondary: '#1E1D20',
         accent: '#38bdf8',
         background: '#F6F6F6',
         border: '#000000',
@@ -23,7 +23,14 @@ export default {
         'footer-border': '#FFFFFF',
         'footer-background': '#1E1D20',
       },
+      clipPath: {
+        custom: 'polygon(0 35%, 100% 0, 100% 100%, 0 100%)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-clip-path'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 };
