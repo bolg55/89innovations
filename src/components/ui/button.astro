@@ -1,7 +1,7 @@
 ---
 interface Props extends astroHTML.JSX.HTMLAttributes {
   type: 'submit' | 'reset' | 'button';
-  size?: 'md' | 'lg';
+  size?: 'md' | 'lg' | 'link';
   block?: boolean;
   style?: 'primary' | 'secondary' | 'plain';
   class?: string;
@@ -21,6 +21,7 @@ const {
 const sizes = {
   lg: 'px-5 py-2.5',
   md: 'px-4 py-2',
+  link: 'p-0',
 };
 
 const styles = {
@@ -29,7 +30,7 @@ const styles = {
   secondary:
     'sm:inline-block text-center w-full block font-semibold relative py-2 px-5 uppercase border-2 border-border cursor-pointer transition-shadow duration-300 ease-in-out shadow-[5px_5px_0_0] shadow-border text-sm lg:text-base bg-white text-primary hover:shadow-none disabled:opacity-50 disabled:cursor-not-allowed',
   plain:
-    'text-primary underline underline-offset-2 hover:decoration-highlight decoration-2 transition-all duration-200 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed',
+    'text-primary hover:text-accent transition-all duration-200 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed',
 };
 ---
 
