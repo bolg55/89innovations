@@ -6,13 +6,13 @@ const {
   description,
   url = Astro.url,
   image,
-  data,
+  frontmatter,
   robots,
 } = Astro.props;
 
 const jsonLD = jsonLDGenerator({
-  type: data ? 'post' : 'website',
-  post: data,
+  type: frontmatter ? 'post' : 'website',
+  post: frontmatter,
   url,
 });
 ---

@@ -1,14 +1,4 @@
-interface Post {
-  title: string;
-  description: string;
-  publishedDate: Date;
-  image: {
-    src: string;
-    alt: string;
-  };
-  author: string;
-  slug: string;
-}
+import type { Post } from '@/interfaces/blog-interface';
 
 const jsonLDGenerator = ({
   type,
