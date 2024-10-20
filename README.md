@@ -40,8 +40,8 @@ The current template should work, but you can add more data if needed. Use the [
 
 - [x] Index page just to show the navbar and footer
 - [x] Contact page with submission form
-- [ ] (Coming soon) Blog page with markdown support and pagination
-- [ ] (Coming soon) Sample blog posts
+- [x] Blog page with markdown support and pagination
+- [x] Sample blog posts
 
 ## Suggested Environment Variables
 
